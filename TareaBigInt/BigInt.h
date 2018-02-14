@@ -12,7 +12,8 @@ class BigInt {
 	friend bool operator!=(const BigInt&, const BigInt&);
 	friend bool operator>=(const BigInt&, const BigInt&);
 	friend bool operator<=(const BigInt&, const BigInt&);
-
+	friend bool operator>(const BigInt&, const BigInt&);
+	friend bool operator<(const BigInt&, const BigInt&);
 
 
 
@@ -22,5 +23,6 @@ public:
 
 private:
 	int entero[10];
-
+	char n[10];
+	
 };

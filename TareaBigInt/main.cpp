@@ -6,11 +6,14 @@ using namespace std;
 int main() {
 	BigInt a, b, resSuma, resResta;
 	bool igualIgual, diferenteDe;
+	int x, y;
 
-	cout << "Ingrese 10 valores porfavor: ";
+	cout << "Ingrese el gran entero 1: ";
 	cin >> a;
 
-	cout << "Ingrese otros 10 valores porfavor para el otro arreglo: ";
+	cout << x;
+
+	cout << "Ingrese el gran entero 2: ";
 	cin >> b;
 
 	resSuma = a + b;
