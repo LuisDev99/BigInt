@@ -120,36 +120,28 @@ bool operator!=(const BigInt &a, const BigInt &b) {
 }
 
 bool operator>=(const BigInt &a, const BigInt &b) {
-	for (int i = 0; i < 10; i++) {
-		if (a.entero[i] < b.entero[i])
-			return false;
-	}
-
-	return true;
+	if (*a.entero >= *b.entero)
+		return true;
+	return false;
 }
 
 bool operator<=(const BigInt &a, const BigInt &b) {
-	for (int i = 0; i < 10; i++) {
-		if (a.entero[i] > b.entero[i])
-			return false;
-	}
-	return true;
+	if (*a.entero <= *b.entero)
+		return true;
+	return false;
 }
 
 bool operator>(const BigInt &a, const BigInt &b) {
-	for (int i = 0; i < 10; i++) {
-		if (a.entero[i] <= b.entero[i])
-			return false;
-	}
-	return true;
+	
+	if (a.entero[0] > b.entero[0])
+		return true;
+	return false;
 }
 
 bool operator<(const BigInt &a, const BigInt &b) {
-	for (int i = 0; i < 10; i++) {
-		if (a.entero[i] >= b.entero[i])
-			return false;
-	}
-	return true;
+	if (a.entero[0] < b.entero[0])
+		return true;
+	return false;
 }
 
 
